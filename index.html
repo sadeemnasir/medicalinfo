@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Centered Table</title>
+  <style>
+    
+    body {
+      font-family: 'Manrope', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      margin: 0;
+      background-color: #e2e2e2;
+      color: white;
+    }
+
+    header {
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      height: 92px;
+      border-top: 5px solid #e2e2e2;
+      display: flex;
+      align-items: center;
+      
+    }
+      
+    
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      background-color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin:auto; 
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .container{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+
+    }
+
+    th, td {
+      border:none;
+      text-align: left;
+      padding: 15px;
+    }
+
+    th:first-child,
+    td:first-child {
+      width: 15%;
+      background-color: rgb(48, 42, 159);
+    }
+
+    th:last-child,
+    td:last-child {
+      width: 85%;
+      background-color: rgb(60, 69, 189);
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .logo{
+      height: 90px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+    }
+    .logo-img{
+      width: 100%;
+      height: 100%;
+      background-image: url("PARC Logo (1).jpg");
+      background-size: cover;
+    }
+   .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-img"></div>
+      <div class="profile-pic"></div>
+    </div>
+    <div class="heading">
+    <p style="color: black; font-weight: bold;font-size: 40px;">Pakistan Agricultural Research Council</p>
+  </div>
+  </header>
+  
+  <div class="container">
+    
+  <table>
+    <thead>
+      <!-- <th colspan="2">
+        <div class="profile-pic"></div>
+      </th> -->
+      </thead>
+     <tbody>
+      <tr>
+
+        <td>Name</td>
+        <td>Muhammad Nasir</td>
+      </tr>
+      <tr>
+        <td>Designation</td>
+        <td>Dy.Director(MIS)</td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td>PARC HQs</td>
+      </tr>
+      <tr>
+        <td>ID</td>
+        <td style="font-weight: bold;">1630</td>
+      </tr>
+      <tr>
+        <td>CNIC</td>
+        <td>61101-1915322-1</td>
+      </tr>
+      <tr>
+        <td>Mobile No.</td>
+        <td>03455208163</td>
+      </tr>
+      <tr>
+        <td>Apptt Nature</td>
+        <td>Regular</td>
+      </tr>
+      <tr>
+        <td>AMA</td>
+        <td>Dr.Zahida Ibrahim</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
